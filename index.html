@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI24GO</title>
+    <meta name="description" content="AI24GO شركة تكنولوجيا من هولندا متخصصة في حلول الذكاء الاصطناعي، الأتمتة الذكية، تصميم وتطوير المواقع، والمنتجات والمنصات الرقمية">
+    <meta name="theme-color" content="#07090c">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <noscript><style>.reveal,[data-reveal]{opacity:1!important;transform:none!important}body{opacity:1!important}</style></noscript>
+</head>
+<body>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" data-scroll>
+                <div class="logo-wrap">
+                    <div class="logo-icon">
+                        <img src="logo.png" alt="AI24GO" width="64" height="66">
+                    </div>
+                    <span class="logo-tag">Intelligent Digital Systems</span>
+                </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-scroll data-i18n="nav.home">الرئيسية</a>
+                <a href="#services" class="nav-link" data-scroll data-i18n="nav.services">الخدمات</a>
+                <a href="#process" class="nav-link" data-scroll data-i18n="nav.process">منهجيتنا</a>
+                <a href="#work" class="nav-link" data-scroll data-i18n="nav.work">أعمالنا</a>
+                <a href="#about" class="nav-link" data-scroll data-i18n="nav.about">من نحن</a>
+                <a href="#contact" class="nav-link" data-scroll data-i18n="nav.contact">تواصل معنا</a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" class="lang-btn" data-langbtn="ar">AR</button>
+                    <button type="button" class="lang-btn" data-langbtn="en">EN</button>
+                    <button type="button" class="lang-btn" data-langbtn="nl">NL</button>
+                </div>
+                <a href="#contact" class="nav-cta" data-scroll data-i18n="nav.cta">ابدأ مشروعك</a>
+                <button class="nav-toggle" id="navToggle" aria-label="القائمة">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a href="#home" class="mobile-link" data-scroll data-i18n="nav.home">الرئيسية</a>
+            <a href="#services" class="mobile-link" data-scroll data-i18n="nav.services">الخدمات</a>
+            <a href="#process" class="mobile-link" data-scroll data-i18n="nav.process">منهجيتنا</a>
+            <a href="#work" class="mobile-link" data-scroll data-i18n="nav.work">أعمالنا</a>
+            <a href="#about" class="mobile-link" data-scroll data-i18n="nav.about">من نحن</a>
+            <a href="#contact" class="mobile-link" data-scroll data-i18n="nav.contact">تواصل معنا</a>
+            <div class="lang-switch mobile-lang" role="group" aria-label="Language">
+                <button type="button" class="lang-btn" data-langbtn="ar">AR</button>
+                <button type="button" class="lang-btn" data-langbtn="en">EN</button>
+                <button type="button" class="lang-btn" data-langbtn="nl">NL</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-visual">
+            <canvas class="hero-canvas" id="heroCanvas"></canvas>
+        </div>
+        <div class="hero-veil"></div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span data-i18n="hero.badge">AI24GO — أنظمة رقمية ذكية من هولندا</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line" data-i18n="hero.t1">حوّل أفكارك إلى</span>
+                <span class="title-line title-gradient" data-i18n="hero.t2">أنظمة ذكية</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero.sub">نصمم ونبني حلولاً ذكية تجمع بين الذكاء الاصطناعي، الأتمتة، المواقع والمنتجات الرقمية لتحويل تحديات الأعمال إلى أنظمة قابلة للنمو والتوسع</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary" data-scroll>
+                    <span data-i18n="hero.b1">ابدأ مشروعك</span>
+                    <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                </a>
+                <a href="#services" class="btn-secondary" data-scroll>
+                    <span data-i18n="hero.b2">اكتشف خدماتنا</span>
+                    <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                </a>
+            </div>
+            <div class="hero-facts">
+                <div class="hero-fact">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span data-i18n="hero.f1">مقرنا في هولندا</span>
+                </div>
+                <span class="hero-fact-sep"></span>
+                <div class="hero-fact">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+                    <span data-i18n="hero.f2">نخدم أوروبا والعالم العربي</span>
+                </div>
+                <span class="hero-fact-sep"></span>
+                <div class="hero-fact">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11l4-6h10l4 6-4 6H7l-4-6z"/><path d="M7 11h10"/></svg>
+                    <span data-i18n="hero.f3">من الفكرة حتى الإطلاق</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span data-i18n="hero.scroll">اكتشف المزيد</span>
+        </div>
+    </section>
+
+    <!-- Capability Marquee -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <div class="marquee-group">
+                <span data-i18n="marq.1">الذكاء الاصطناعي</span><i>✦</i>
+                <span data-i18n="marq.2">الأتمتة الذكية</span><i>✦</i>
+                <span data-i18n="marq.3">تصميم وتطوير المواقع</span><i>✦</i>
+                <span data-i18n="marq.4">المنتجات والمنصات الرقمية</span><i>✦</i>
+                <span data-i18n="marq.5">حلول مصممة خصيصاً</span><i>✦</i>
+                <span data-i18n="marq.6">قابلة للنمو والتوسع</span><i>✦</i>
+            </div>
+            <div class="marquee-group">
+                <span data-i18n="marq.1">الذكاء الاصطناعي</span><i>✦</i>
+                <span data-i18n="marq.2">الأتمتة الذكية</span><i>✦</i>
+                <span data-i18n="marq.3">تصميم وتطوير المواقع</span><i>✦</i>
+                <span data-i18n="marq.4">المنتجات والمنصات الرقمية</span><i>✦</i>
+                <span data-i18n="marq.5">حلول مصممة خصيصاً</span><i>✦</i>
+                <span data-i18n="marq.6">قابلة للنمو والتوسع</span><i>✦</i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="services.tag">خدماتنا</span>
+                <h2 class="section-title" data-i18n="services.title">نبني <span class="text-gradient">أنظمة تجعل أعمالك أذكى</span></h2>
+                <p class="section-desc" data-i18n="services.desc">من الذكاء الاصطناعي والأتمتة إلى المواقع والمنتجات الرقمية، نبني حلولاً تقنية مصممة حول احتياجات عملك ونتائجك</p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- 01 AI -->
+                <article class="service-card reveal" data-service="ai">
+                    <div class="card-glow"></div>
+                    <span class="card-index">01</span>
+                    <canvas class="service-viz" data-viz="ai" aria-hidden="true"></canvas>
+                    <div class="card-content">
+                        <h3 class="service-title" data-i18n="svc.ai.title">حلول الذكاء الاصطناعي</h3>
+                        <p class="service-desc" data-i18n="svc.ai.desc">نصمم ونبني حلول ذكاء اصطناعي مخصصة تساعد الشركات على تحليل المعلومات، تحسين العمليات واتخاذ قرارات أكثر ذكاءً</p>
+                        <ul class="service-features">
+                            <li data-i18n="svc.ai.f1">AI Assistants</li>
+                            <li data-i18n="svc.ai.f2">AI Agents</li>
+                            <li data-i18n="svc.ai.f3">أنظمة المعرفة الذكية</li>
+                            <li data-i18n="svc.ai.f4">معالجة اللغة الطبيعية</li>
+                            <li data-i18n="svc.ai.f5">تحليل البيانات والتنبؤ</li>
+                            <li data-i18n="svc.ai.f6">Computer Vision</li>
+                            <li data-i18n="svc.ai.f7">حلول AI مخصصة</li>
+                        </ul>
+                        <p class="service-outcome" data-i18n="svc.ai.out">حوّل بياناتك ومعرفتك إلى ذكاء قابل للتنفيذ</p>
+                        <a href="#contact" class="service-link" data-scroll>
+                            <span data-i18n="svc.cta">ابدأ مشروعاً</span>
+                            <svg class="arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 02 Automation -->
+                <article class="service-card reveal" data-service="automation">
+                    <div class="card-glow"></div>
+                    <span class="card-index">02</span>
+                    <canvas class="service-viz" data-viz="automation" aria-hidden="true"></canvas>
+                    <div class="card-content">
+                        <h3 class="service-title" data-i18n="svc.au.title">الأتمتة الذكية</h3>
+                        <p class="service-desc" data-i18n="svc.au.desc">نحوّل العمليات المتكررة والمعقدة إلى تدفقات عمل ذكية تقلل العمل اليدوي وتزيد سرعة وكفاءة الأعمال</p>
+                        <ul class="service-features">
+                            <li data-i18n="svc.au.f1">أتمتة العمليات</li>
+                            <li data-i18n="svc.au.f2">AI Workflows</li>
+                            <li data-i18n="svc.au.f3">أتمتة خدمة العملاء</li>
+                            <li data-i18n="svc.au.f4">معالجة المستندات والبيانات</li>
+                            <li data-i18n="svc.au.f5">تكامل الأنظمة</li>
+                            <li data-i18n="svc.au.f6">API Automation</li>
+                        </ul>
+                        <p class="service-outcome" data-i18n="svc.au.out">قلّل العمل اليدوي وزد كفاءة أعمالك</p>
+                        <a href="#contact" class="service-link" data-scroll>
+                            <span data-i18n="svc.cta">ابدأ مشروعاً</span>
+                            <svg class="arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 03 Web -->
+                <article class="service-card reveal" data-service="web">
+                    <div class="card-glow"></div>
+                    <span class="card-index">03</span>
+                    <canvas class="service-viz" data-viz="web" aria-hidden="true"></canvas>
+                    <div class="card-content">
+                        <h3 class="service-title" data-i18n="svc.web.title">تصميم وتطوير المواقع</h3>
+                        <p class="service-desc" data-i18n="svc.web.desc">نصمم ونطور مواقع رقمية متقدمة تجمع التصميم الراقي مع الأداء العالي، تجربة المستخدم وتحسين الظهور في محركات البحث</p>
+                        <ul class="service-features">
+                            <li data-i18n="svc.web.f1">تصميم UI/UX</li>
+                            <li data-i18n="svc.web.f2">مواقع الشركات</li>
+                            <li data-i18n="svc.web.f3">مواقع الخدمات</li>
+                            <li data-i18n="svc.web.f4">Landing Pages</li>
+                            <li data-i18n="svc.web.f5">مواقع SaaS وAI</li>
+                            <li data-i18n="svc.web.f6">تطوير Front-end وBack-end</li>
+                            <li data-i18n="svc.web.f7">SEO التقني</li>
+                            <li data-i18n="svc.web.f8">Responsive Design</li>
+                            <li data-i18n="svc.web.f9">AI &amp; API Integrations</li>
+                        </ul>
+                        <p class="service-outcome" data-i18n="svc.web.out">حوّل حضورك الرقمي إلى تجربة تعكس قيمة علامتك التجارية وتحوّل الزوار إلى فرص</p>
+                        <a href="#contact" class="service-link" data-scroll>
+                            <span data-i18n="svc.cta">ابدأ مشروعاً</span>
+                            <svg class="arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 04 Products -->
+                <article class="service-card reveal" data-service="products">
+                    <div class="card-glow"></div>
+                    <span class="card-index">04</span>
+                    <canvas class="service-viz" data-viz="products" aria-hidden="true"></canvas>
+                    <div class="card-content">
+                        <h3 class="service-title" data-i18n="svc.pr.title">المنتجات والمنصات الرقمية</h3>
+                        <p class="service-desc" data-i18n="svc.pr.desc">نحوّل الأفكار إلى منتجات رقمية قابلة للنمو، من تطبيقات الهاتف ومنصات الويب إلى الأنظمة والتجارب الرقمية المخصصة</p>
+                        <ul class="service-features">
+                            <li data-i18n="svc.pr.f1">Web Applications</li>
+                            <li data-i18n="svc.pr.f2">Mobile Applications</li>
+                            <li data-i18n="svc.pr.f3">SaaS</li>
+                            <li data-i18n="svc.pr.f4">Digital Platforms</li>
+                            <li data-i18n="svc.pr.f5">Business Systems</li>
+                            <li data-i18n="svc.pr.f6">Dashboards</li>
+                            <li data-i18n="svc.pr.f7">Internal Tools</li>
+                            <li data-i18n="svc.pr.f8">APIs &amp; Integrations</li>
+                        </ul>
+                        <p class="service-outcome" data-i18n="svc.pr.out">حوّل فكرتك إلى منتج رقمي قابل للنمو والتوسع</p>
+                        <a href="#contact" class="service-link" data-scroll>
+                            <span data-i18n="svc.cta">ابدأ مشروعاً</span>
+                            <svg class="arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Services connect strip -->
+            <div class="services-connect reveal" aria-hidden="true">
+                <div class="conn-station" style="left:12.5%"><span data-i18n="cn.ai">الذكاء الاصطناعي</span></div>
+                <div class="conn-station" style="left:37.5%"><span data-i18n="cn.au">الأتمتة</span></div>
+                <div class="conn-station" style="left:62.5%"><span data-i18n="cn.web">المواقع</span></div>
+                <div class="conn-station" style="left:87.5%"><span data-i18n="cn.pr">المنتجات الرقمية</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why AI24GO -->
+    <section class="why" id="why">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="why.tag">مميّزاتنا</span>
+                <h2 class="section-title" data-i18n="why.title">لماذا <span class="text-gradient">AI24GO</span>؟</h2>
+                <p class="section-desc" data-i18n="why.desc">أربع مبادئ تحكم كل مشروع نبني مع عملائنا</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-item reveal">
+                    <span class="why-num">01</span>
+                    <h3 data-i18n="why.1t">AI أولاً</h3>
+                    <p data-i18n="why.1d">نستخدم الذكاء الاصطناعي عندما يصنع قيمة حقيقية</p>
+                </div>
+                <div class="why-item reveal">
+                    <span class="why-num">02</span>
+                    <h3 data-i18n="why.2t">من الفكرة إلى التنفيذ</h3>
+                    <p data-i18n="why.2d">لا نقدم توصيات فقط — نبني الحل ونطوره حتى التشغيل</p>
+                </div>
+                <div class="why-item reveal">
+                    <span class="why-num">03</span>
+                    <h3 data-i18n="why.3t">حلول مخصصة</h3>
+                    <p data-i18n="why.3d">لا قوالب جاهزة ولا حلول مفروضة على مشروعك</p>
+                </div>
+                <div class="why-item reveal">
+                    <span class="why-num">04</span>
+                    <h3 data-i18n="why.4t">مصمم للنمو</h3>
+                    <p data-i18n="why.4d">نبني أنظمة يمكن تطويرها وتوسيعها مع نمو أعمالك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="process.tag">منهجيتنا</span>
+                <h2 class="section-title" data-i18n="process.title">كيف <span class="text-gradient">نعمل</span></h2>
+                <p class="section-desc" data-i18n="process.desc">منهجية واضحة وشفافة تأخذ مشروعك من الفكرة إلى الإطلاق بخطوات محكمة</p>
+            </div>
+            <div class="process-track">
+                <div class="process-progress" id="processProgress"></div>
+                <div class="process-grid">
+                    <div class="process-card reveal">
+                        <div class="process-step">01</div>
+                        <h3 data-i18n="pr.1t">الاستكشاف والفهم</h3>
+                        <p data-i18n="pr.1d">نفهم أهدافك، تحدياتك ومتطلباتك قبل أي خطوة تقنية</p>
+                    </div>
+                    <div class="process-card reveal">
+                        <div class="process-step">02</div>
+                        <h3 data-i18n="pr.2t">التصميم والتفصيل</h3>
+                        <p data-i18n="pr.2d">نضع الحل المناسب وخارطة طريق واضحة وأهدافاً قابلة للقياس</p>
+                    </div>
+                    <div class="process-card reveal">
+                        <div class="process-step">03</div>
+                        <h3 data-i18n="pr.3t">البناء والتطوير</h3>
+                        <p data-i18n="pr.3d">نطور ونختبر ونربط الحل بالأنظمة المطلوبة</p>
+                    </div>
+                    <div class="process-card reveal">
+                        <div class="process-step">04</div>
+                        <h3 data-i18n="pr.4t">الإطلاق والدعم</h3>
+                        <p data-i18n="pr.4d">نطلق الحل ونواصل تحسينه ودعمه لضمان الأداء والاستقرار</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work / Case studies -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="work.tag">أعمالنا</span>
+                <h2 class="section-title" data-i18n="work.title">دراسات <span class="text-gradient">حالة</span></h2>
+                <p class="section-desc" data-i18n="work.desc">نعرض أعمالنا بهيكل موثق وواضح — التحدي، الحل، التقنية، والنتيجة. تُضاف دراسات الحالة الحقيقية هنا عند إطلاقها</p>
+            </div>
+            <div class="work-card reveal">
+                <div class="work-badge" data-i18n="work.example">نموذج توثيق</div>
+                <div class="work-flow">
+                    <div class="work-stage">
+                        <span class="work-stage-label" data-i18n="wf.ch">التحدي</span>
+                        <p data-i18n="wf.c">تسريع العمليات وتقليل العمل اليدوي في مؤسسة متنامية</p>
+                    </div>
+                    <span class="work-arrow">↓</span>
+                    <div class="work-stage">
+                        <span class="work-stage-label" data-i18n="wf.so">الحل</span>
+                        <p data-i18n="wf.s">نظام أتمتة ذكي يربط الأدوات والبيانات في تدفق عمل واحد</p>
+                    </div>
+                    <span class="work-arrow">↓</span>
+                    <div class="work-stage">
+                        <span class="work-stage-label" data-i18n="wf.te">التقنية</span>
+                        <p data-i18n="wf.t">أتمتة العمليات + تكامل API + نماذج ذكاء اصطناعي مخصصة</p>
+                    </div>
+                    <span class="work-arrow">↓</span>
+                    <div class="work-stage">
+                        <span class="work-stage-label" data-i18n="wf.re">النتيجة</span>
+                        <p data-i18n="wf.r">معالجة أسرع وقرارات أدق، مع قابلية التوسع للنمو</p>
+                    </div>
+                </div>
+                <p class="work-note" data-i18n="work.note">هذا القالب يُستبدل بدراسات حالة حقيقية ومشاريع موثقة عند توفرها</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-visual-inner">
+                        <canvas class="about-canvas" id="aboutCanvas"></canvas>
+                        <div class="about-visual-frame"></div>
+                        <div class="about-core about-core-2"></div>
+                        <div class="about-chip about-chip-1">
+                            <span class="chip-dot"></span>
+                            <div><strong>AI</strong><small data-i18n="about.viz">تمثيل نظامنا الذكي</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-tag" data-i18n="about.tag">مختبر ابتكار رقمي من هولندا</span>
+                    <h2 class="section-title" data-i18n="about.title">تكنولوجيا تحل <span class="text-gradient">مشكلات حقيقية</span></h2>
+                    <p class="about-text" data-i18n="about.p1">AI24GO شركة تكنولوجيا متخصصة في الذكاء الاصطناعي، الأتمتة، تصميم وتطوير المواقع والمنتجات الرقمية. نساعد الشركات على تحويل الأفكار والتحديات المعقدة إلى حلول تقنية عملية وقابلة للنمو</p>
+                    <div class="about-points">
+                        <div class="about-point">
+                            <strong data-i18n="ab.1t">AI-First</strong>
+                            <span data-i18n="ab.1d">نستخدم الذكاء الاصطناعي عندما يصنع قيمة حقيقية</span>
+                        </div>
+                        <div class="about-point">
+                            <strong data-i18n="ab.2t">حلول مخصصة</strong>
+                            <span data-i18n="ab.2d">نبني الحل حول احتياجات العمل، وليس حول قالب جاهز</span>
+                        </div>
+                        <div class="about-point">
+                            <strong data-i18n="ab.3t">قابلية التوسع</strong>
+                            <span data-i18n="ab.3d">نصمم الأنظمة لتتطور مع نمو الأعمال</span>
+                        </div>
+                        <div class="about-point">
+                            <strong data-i18n="ab.4t">شراكة مستمرة</strong>
+                            <span data-i18n="ab.4d">نبقى مع المشروع بعد الإطلاق للتطوير والتحسين</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-card reveal">
+                <div class="cta-aurora"></div>
+                <div class="cta-content">
+                    <div class="cta-copy">
+                        <span class="section-tag" data-i18n="cta.tag">افتح مشروعك</span>
+                        <h2 class="cta-title" data-i18n="cta.title">لنبنِ <span class="text-gradient">ما هو قادم</span></h2>
+                        <p class="cta-text" data-i18n="cta.text">أخبرنا عن مشروعك وسنراجع احتياجاته ونساعدك على تحديد أفضل مسار تقني له</p>
+                        <div class="cta-info">
+                            <div class="cta-info-item">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <span data-i18n="cta.a1">أمستردام، هولندا</span>
+                            </div>
+                            <div class="cta-info-item">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <span>info@ai24go.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="cfName" data-i18n="cta.f.name">الاسم</label>
+                                <input type="text" id="cfName" name="name" data-i18n-ph="cta.f.namePh" placeholder="اسمك الكامل" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="cfEmail" data-i18n="cta.f.email">البريد الإلكتروني</label>
+                                <input type="email" id="cfEmail" name="email" data-i18n-ph="cta.f.emailPh" placeholder="you@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="cfService" data-i18n="cta.f.service">الخدمة</label>
+                            <select id="cfService" name="service">
+                                <option data-i18n="cta.f.svc1">حلول الذكاء الاصطناعي</option>
+                                <option data-i18n="cta.f.svc2">الأتمتة الذكية</option>
+                                <option data-i18n="cta.f.svc3">تصميم وتطوير المواقع</option>
+                                <option data-i18n="cta.f.svc4">المنتجات والمنصات الرقمية</option>
+                                <option data-i18n="cta.f.svc5">أخرى / غير متأكد</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="cfMessage" data-i18n="cta.f.msg">عن مشروعك</label>
+                            <textarea id="cfMessage" name="message" rows="4" data-i18n-ph="cta.f.msgPh" placeholder="وصف مختصر لمشروعك وأهدافه..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-block">
+                            <span data-i18n="cta.f.btn">أرسل طلبك</span>
+                            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </button>
+                        <p class="form-note" id="formNote" data-i18n="cta.f.note">سيتم فتح تطبيق البريد الإلكتروني لإرسال طلبك</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo" data-scroll>
+                        <div class="logo-wrap">
+                            <div class="logo-icon">
+                                <img src="logo.png" alt="AI24GO" width="64" height="66">
+                            </div>
+                            <span class="logo-tag">Intelligent Digital Systems</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc" data-i18n="ft.desc">نحوّل الأفكار والتحديات التجارية إلى حلول ذكية تجمع بين الذكاء الاصطناعي، الأتمتة، المواقع والمنتجات الرقمية</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="ft.c1">الخدمات</h4>
+                    <a href="#services" data-scroll data-i18n="ft.s1">حلول الذكاء الاصطناعي</a>
+                    <a href="#services" data-scroll data-i18n="ft.s2">الأتمتة الذكية</a>
+                    <a href="#services" data-scroll data-i18n="ft.s3">تصميم وتطوير المواقع</a>
+                    <a href="#services" data-scroll data-i18n="ft.s4">المنتجات والمنصات الرقمية</a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="ft.c2">الشركة</h4>
+                    <a href="#about" data-scroll data-i18n="ft.cp1">من نحن</a>
+                    <a href="#process" data-scroll data-i18n="ft.cp2">منهجيتنا</a>
+                    <a href="#work" data-scroll data-i18n="ft.cp3">أعمالنا</a>
+                    <a href="#contact" data-scroll data-i18n="ft.cp4">تواصل معنا</a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="ft.c3">التواصل</h4>
+                    <a href="mailto:info@ai24go.com">info@ai24go.com</a>
+                    <a href="#contact" data-scroll data-i18n="ft.cn2">نموذج التواصل</a>
+                    <a href="#" data-i18n="ft.cn4">أمستردام / هولندا</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> AI24GO — <span data-i18n="ft.bot">جميع الحقوق محفوظة</span></p>
+                <div class="footer-bottom-links">
+                    <a href="#" data-i18n="ft.priv">سياسة الخصوصية</a>
+                    <a href="#" data-i18n="ft.terms">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
